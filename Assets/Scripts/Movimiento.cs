@@ -7,13 +7,6 @@ public class Movimiento : MonoBehaviour
     private float x;
     private float z;
 
-    
-
-    void Start()
-    {
-        
-    }
-
    
     void FixedUpdate()
     {
