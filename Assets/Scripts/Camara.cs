@@ -4,16 +4,43 @@ using UnityEngine;
 
 public class Camara : MonoBehaviour
 {
-    public Transform personaje; // Asigna el objeto del personaje en el Inspector de Unity.
+    public Transform personaje;
 
-    public Vector3 offset = new Vector3(10, 15, 10); // Ajusta la posición relativa de la cámara respecto al personaje.
 
+    // Ajusta la posición relativa de la cámara respecto al personaje.
+    public Vector3 offset = new Vector3(10, 15, 10);
+
+    public Vector2 sensibilidad;
+    private float camaraX;
+    private float camaraY;
+
+    void Start()
+    {
+        //impide que el cursor se vea y se salga de la ventana de juego 
+        Cursor.lockState = CursorLockMode.Locked;
+
+        personaje = transform.parent;
+
+    }
     void Update()
     {
         if (personaje != null)
         {
             // Actualiza la posición de la cámara para seguir al personaje con un pequeño desfase.
             transform.position = personaje.position + offset;
+
+            camaraX = Input.GetAxisRaw("Mouse X");
+            camaraY = Input.GetAxisRaw("Mouse Y");
+
+            if (camaraX != 0)
+            {
+             personaje.Rotate(Vector3.up * camaraX * sensibilidad.x);
+            }
+
+            if (camaraY != 0)
+            {
+                transform.Rotate(Vector3.left * camaraY * sensibilidad.y);
+            }
         }
     }
 

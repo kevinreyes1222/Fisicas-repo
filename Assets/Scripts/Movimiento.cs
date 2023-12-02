@@ -5,9 +5,11 @@ using UnityEngine;
 public class Movimiento : MonoBehaviour
 {
     private float x;
-    private float z;
-
+    private float z; 
    
+
+
+
     void FixedUpdate()
     {
         x = Input.GetAxisRaw("Horizontal");
@@ -15,6 +17,7 @@ public class Movimiento : MonoBehaviour
 
         GetComponent<Rigidbody>().velocity = new Vector3(x, 0, z) * 5;
 
-        
+       
+
     }
 }
