@@ -19,7 +19,7 @@ public class Camara : MonoBehaviour
         //impide que el cursor se vea y se salga de la ventana de juego 
         Cursor.lockState = CursorLockMode.Locked;
 
-        personaje = transform.parent;
+       
 
     }
     void Update()
@@ -27,14 +27,14 @@ public class Camara : MonoBehaviour
         if (personaje != null)
         {
             // Actualiza la posición de la cámara para seguir al personaje con un pequeño desfase.
-            transform.position = personaje.position + offset;
+            transform.position = personaje.position + offset  ;
 
             camaraX = Input.GetAxisRaw("Mouse X");
             camaraY = Input.GetAxisRaw("Mouse Y");
 
             if (camaraX != 0)
             {
-             personaje.Rotate(Vector3.up * camaraX * sensibilidad.x);
+             transform.Rotate(Vector3.up * camaraX * sensibilidad.x, Space.World);
             }
 
             if (camaraY != 0)

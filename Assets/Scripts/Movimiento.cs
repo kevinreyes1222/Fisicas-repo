@@ -5,17 +5,17 @@ using UnityEngine;
 public class Movimiento : MonoBehaviour
 {
     private float x;
-    private float z; 
-   
+    private float z;
+    public Transform cameraTransform;
 
-
+    
 
     void FixedUpdate()
     {
         x = Input.GetAxisRaw("Horizontal");
         z = Input.GetAxisRaw("Vertical");
 
-        GetComponent<Rigidbody>().velocity = new Vector3(x, 0, z) * 5;
+        GetComponent<Rigidbody>().velocity = (cameraTransform.forward* z + cameraTransform.right * x) * Time.deltaTime * 100 ;
 
        
 
