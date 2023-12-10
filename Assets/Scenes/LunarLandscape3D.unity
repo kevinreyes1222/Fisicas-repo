@@ -5544,6 +5544,7 @@ GameObject:
   - component: {fileID: 943659952}
   - component: {fileID: 943659951}
   - component: {fileID: 943659950}
+  - component: {fileID: 943659954}
   m_Layer: 0
   m_Name: Trasportador
   m_TagString: Untagged
@@ -5629,6 +5630,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &943659954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943659949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d72cbab92018e4dbf46a3cc507feeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneSelected:
+    sceneAsset: {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}
+    scenePath: Assets/Scenes/SampleScene.unity
 --- !u!1 &1000370755
 GameObject:
   m_ObjectHideFlags: 0
