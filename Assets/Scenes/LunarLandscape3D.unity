@@ -374,7 +374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 219631943}
   - component: {fileID: 219631944}
-  - component: {fileID: 219631945}
+  - component: {fileID: 219631946}
   m_Layer: 0
   m_Name: Zona Recogida
   m_TagString: Untagged
@@ -410,7 +410,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &219631945
+--- !u!114 &219631946
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -419,11 +419,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 219631942}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b006ed9e6733c741a88a83fba1d77fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ad695f5c9fa0e547ab1d4dda71df3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cubo: {fileID: 902287670}
   mano: {fileID: 1907471123}
+  fuerza: 10
 --- !u!1 &231589104
 GameObject:
   m_ObjectHideFlags: 0
