@@ -18,6 +18,6 @@ public class Movimiento : MonoBehaviour
         GetComponent<Rigidbody>().velocity = (cameraTransform.forward* z + cameraTransform.right * x) * Time.deltaTime * 100 ;
 
        
-
+       
     }
 }
