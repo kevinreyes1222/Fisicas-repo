@@ -25,21 +25,22 @@ public class Movimiento : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
         print(jump);
-        Vector3 salto = new Vector3(0, jump * fuerzaSalto, 0);
-        if (canJump)
+        Vector3 salto = new Vector3(0, fuerzaSalto, 0);
+        if (canJump && jump != 0)
         {
-            rb.AddForce(salto,ForceMode.Impulse);
+            rb.AddForce(salto, ForceMode.Impulse);
 
         }
     }
 
     void FixedUpdate()
     {
-       
 
-        rb.velocity = (cameraTransform.forward* vertical + cameraTransform.right * horizontal) * Time.deltaTime * 100;
-        rb.velocity = new Vector3(rb.velocity.x,0, rb.velocity.z);
-        
+
+        var m = (cameraTransform.forward * vertical + cameraTransform.right * horizontal) * Time.deltaTime * 100;
+        //rb.velocity = ;
+        rb.velocity = new Vector3(m.x, rb.velocity.y, m.z);
+
 
     }
 
