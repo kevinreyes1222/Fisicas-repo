@@ -6,12 +6,14 @@ using UnityEngine;
 
 public class AgarraSueltaLanza : MonoBehaviour
 {
+    
     public GameObject cubo;
     public Transform mano;
     public float fuerza;
-
+    public  static bool lanzado = false;
+    public static bool soltado = false;
     private bool activo;
-    private bool enMano;
+    public static bool enMano;
     private Vector3 escala;
 
     public float tiempo = 0f;
@@ -24,6 +26,7 @@ public class AgarraSueltaLanza : MonoBehaviour
 
     void Update()
     {
+        
         if(activo == true)
         {
             if(Input.GetKeyDown(KeyCode.E))
@@ -46,8 +49,10 @@ public class AgarraSueltaLanza : MonoBehaviour
 
             if(enMano == true)
             {
+
                 cubo.GetComponent<Rigidbody>().AddForce(transform.forward * fuerza, ForceMode.Impulse);
                 enMano = false;
+                lanzado = true;
                 print(tiempo = Time.time);
                 
                 
@@ -62,6 +67,7 @@ public class AgarraSueltaLanza : MonoBehaviour
             cubo.transform.SetParent(null);
             cubo.GetComponent<Rigidbody>().isKinematic = false;
             cubo.transform.localScale = escala;
+            soltado = true;
         }
     }
 
@@ -73,6 +79,8 @@ public class AgarraSueltaLanza : MonoBehaviour
         if(other.tag == "Player")
         {
             activo = true;
+            lanzado = false;
+            soltado = false;
         }
 
         print(Time.time - tiempo);
