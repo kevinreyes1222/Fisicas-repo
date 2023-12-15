@@ -18,6 +18,12 @@ public class SceneSwitch : MonoBehaviour
         
     }
 
+    public void cambiar()
+    {
+        SceneManager.LoadScene(sceneSelected);
+
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         SceneManager.LoadScene(sceneSelected);  
