@@ -6287,7 +6287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTransform: {fileID: 145028041}
-  fuerzaSalto: 0.5
+  fuerzaSalto: 2
   canJump: 0
 --- !u!54 &2063204368
 Rigidbody:
