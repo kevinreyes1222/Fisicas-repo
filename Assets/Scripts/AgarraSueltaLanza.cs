@@ -94,5 +94,11 @@ public class AgarraSueltaLanza : MonoBehaviour
         {
             activo = false;
         }
-    }
+
+        if (this.tag == "Cubo")
+        {
+            cubo.transform.localScale = new Vector3(2f, 2f, 2f);
+        }
+    }    
+    
 }
