@@ -24,7 +24,7 @@ public class Movimiento : MonoBehaviour
         jump = Input.GetAxis("Jump");
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
-        print(jump);
+        
         Vector3 salto = new Vector3(0, fuerzaSalto, 0);
         if (canJump && jump != 0)
         {

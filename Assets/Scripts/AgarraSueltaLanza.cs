@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AgarraSueltaLanza : MonoBehaviour
@@ -11,6 +13,8 @@ public class AgarraSueltaLanza : MonoBehaviour
     private bool activo;
     private bool enMano;
     private Vector3 escala;
+
+    public float tiempo = 0f;
 
     private void Start()
     {
@@ -44,8 +48,13 @@ public class AgarraSueltaLanza : MonoBehaviour
             {
                 cubo.GetComponent<Rigidbody>().AddForce(transform.forward * fuerza, ForceMode.Impulse);
                 enMano = false;
+                print(tiempo = Time.time);
+                
+                
             }
         }
+
+        
 
         if(Input.GetKeyDown(KeyCode.G))
         {
@@ -56,6 +65,8 @@ public class AgarraSueltaLanza : MonoBehaviour
         }
     }
 
+
+    
     private void OnTriggerEnter(Collider other)
     {
         //Trigger de entrada
@@ -63,6 +74,9 @@ public class AgarraSueltaLanza : MonoBehaviour
         {
             activo = true;
         }
+
+        print(Time.time - tiempo);
+
     }
 
     private void OnTriggerExit(Collider other)
