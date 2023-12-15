@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 297098016}
-  m_IndirectSpecularColor: {r: 0.002063206, g: 0.0019480612, b: 0.0021180937, a: 1}
+  m_IndirectSpecularColor: {r: 0.0020619242, g: 0.0019479868, b: 0.0021169633, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 3999703}
   - component: {fileID: 3999702}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Transportador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58906252b0dd50c4f9447002cfc6fb44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityValue: {x: 0, y: -9.81, z: 0}
+  gravityValue: {x: 0, y: -3.71, z: 0}
 --- !u!114 &3999703
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class Camara : MonoBehaviour
 {
     public Transform personaje;
 
+    bool cursorVisible = true;
 
     // Ajusta la posición relativa de la cámara respecto al personaje.
     public Vector3 offset = new Vector3(10, 15, 10);
@@ -17,9 +18,9 @@ public class Camara : MonoBehaviour
     void Start()
     {
         //impide que el cursor se vea y se salga de la ventana de juego 
-        //Cursor.lockState = CursorLockMode.Locked;
+        OcultarCursor();
 
-       
+
 
     }
     void Update()
@@ -41,7 +42,35 @@ public class Camara : MonoBehaviour
             {
                 transform.Rotate(Vector3.left * camaraY * sensibilidad.y);
             }
+
+            //Escape para habilitar el cursor del mouse
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                cursorVisible = !cursorVisible;
+                if (cursorVisible)
+                {
+                    MostrarCursor();
+                }
+                else
+                {
+                    OcultarCursor();
+                }
+            }
         }
+
+    }
+
+    void OcultarCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked; 
+        Cursor.visible = false; 
+    }
+
+    void MostrarCursor()
+    {
+        Cursor.lockState = CursorLockMode.None; 
+        Cursor.visible = true; 
     }
 
 }
