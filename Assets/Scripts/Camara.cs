@@ -17,7 +17,7 @@ public class Camara : MonoBehaviour
     void Start()
     {
         //impide que el cursor se vea y se salga de la ventana de juego 
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
 
        
 
