@@ -1,8 +1,11 @@
+// NO CERTIFICADO POR ELIEZERDEV
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camara : MonoBehaviour
+public class CamaraSet : MonoBehaviour
 {
     public Transform personaje;
 
@@ -19,9 +22,6 @@ public class Camara : MonoBehaviour
     {
         //impide que el cursor se vea y se salga de la ventana de juego 
         OcultarCursor();
-
-
-
     }
     void Update()
     {

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,10 +8,11 @@ public class CambioLunar : MonoBehaviour
 {
     public SceneReference mars;
     public SceneReference earth;
-    public Canvas canva;
-
+    public Canvas canvaSelector;
+    public Canvas canvaMessage;
+    public CamaraSet camara;
     // Start is called before the first frame update
-   public void irArMarte()
+    public void irArMarte()
     {
         SceneManager.LoadScene(mars);
     }
@@ -22,11 +24,19 @@ public class CambioLunar : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        canva.gameObject.SetActive(true);
+        canvaSelector.gameObject.SetActive(true);
+        camara.GetComponent<CamaraSet>().enabled = false;
+
     }
 
     public void Desactivar()
     {
-        canva.gameObject.SetActive(false);
+        canvaSelector.gameObject.SetActive(false);
+        camara.GetComponent<CamaraSet>().enabled = true;
+
+    }
+    public void Desactivar2()
+    {
+        canvaMessage.gameObject.SetActive(false);
     }
 }
