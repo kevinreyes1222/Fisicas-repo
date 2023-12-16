@@ -21,7 +21,7 @@ public class CamaraSet : MonoBehaviour
     void Start()
     {
         //impide que el cursor se vea y se salga de la ventana de juego 
-        OcultarCursor();
+        //OcultarCursor();
     }
     void Update()
     {
