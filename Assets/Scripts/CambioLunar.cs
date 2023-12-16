@@ -7,6 +7,7 @@ public class CambioLunar : MonoBehaviour
 {
     public SceneReference mars;
     public SceneReference earth;
+    public Canvas canva;
 
     // Start is called before the first frame update
    public void irArMarte()
@@ -17,5 +18,15 @@ public class CambioLunar : MonoBehaviour
     public void irAlaTierra() {
         SceneManager.LoadScene(earth);
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        canva.gameObject.SetActive(true);
+    }
+
+    public void Desactivar()
+    {
+        canva.gameObject.SetActive(false);
     }
 }
