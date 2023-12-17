@@ -1496,7 +1496,7 @@ MonoBehaviour:
   lanzado: 0
   soltado: 0
   enMano: 0
-  canvasTiempo: {fileID: 0}
+  canvasTiempo: {fileID: 2092803373}
   TextObjetTime: {fileID: 0}
 --- !u!135 &1047734547
 SphereCollider:
