@@ -349,8 +349,65 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 39.799, y: -26.684, z: -11.81}
+--- !u!1001 &188329296
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7044506886740896791, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
+      propertyPath: m_Name
+      value: table
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676611085856388781, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676611085856388781, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.242879
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676611085856388781, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676611085856388781, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.0773063
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676611085856388781, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676611085856388781, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676611085856388781, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676611085856388781, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676611085856388781, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676611085856388781, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676611085856388781, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2eecbaf92d5f82d4885b852b0896154b, type: 3}
 --- !u!1 &223284843
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,7 +504,6 @@ MonoBehaviour:
   lanzado: 0
   soltado: 0
   enMano: 0
-  tiempo: 0
   canvasTiempo: {fileID: 0}
   TextObjetTime: {fileID: 0}
 --- !u!135 &386686246
@@ -555,7 +611,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &543192840
 GameObject:
@@ -767,7 +823,7 @@ Transform:
   m_Children:
   - {fileID: 1652298956}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 88.449, z: 0}
 --- !u!1 &697430288
 GameObject:
@@ -876,13 +932,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697430288}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.03, y: 14.2, z: -6.22}
+  m_LocalPosition: {x: -15.646, y: 14.374, z: -5.492}
   m_LocalScale: {x: 0.26638, y: 0.26638, z: 0.26638}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1047734545}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &886470742
 GameObject:
@@ -1296,7 +1352,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1016477314
 GameObject:
@@ -1440,7 +1496,6 @@ MonoBehaviour:
   lanzado: 0
   soltado: 0
   enMano: 0
-  tiempo: 0
   canvasTiempo: {fileID: 0}
   TextObjetTime: {fileID: 0}
 --- !u!135 &1047734547
@@ -1546,7 +1601,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
       propertyPath: m_LocalScale.x
@@ -1781,7 +1836,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1560904174
 GameObject:
@@ -1859,7 +1914,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1570440698
 GameObject:
@@ -1894,7 +1949,7 @@ Transform:
   - {fileID: 1706744965}
   - {fileID: 223284845}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1579484601
 PrefabInstance:
@@ -2240,13 +2295,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901980577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.195, y: 13.874, z: -7.65}
+  m_LocalPosition: {x: -15.778, y: 14.385, z: -8.429}
   m_LocalScale: {x: 0.26638, y: 0.26638, z: 0.26638}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 386686244}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2032506634
 GameObject:
@@ -2460,7 +2515,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2092803370
 GameObject:
