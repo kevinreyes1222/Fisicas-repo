@@ -24,8 +24,14 @@ public class CambioLunar : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        canvaSelector.gameObject.SetActive(true);
-        camara.GetComponent<CamaraSet>().enabled = false;
+        if (other.tag == "Player")
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            canvaSelector.gameObject.SetActive(true);
+            camara.GetComponent<CamaraSet>().enabled = false;
+        }
+       
 
     }
 
