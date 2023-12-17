@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 297098016}
-  m_IndirectSpecularColor: {r: 0.002063206, g: 0.0019480612, b: 0.0021180937, a: 1}
+  m_IndirectSpecularColor: {r: 0.0020619242, g: 0.0019479868, b: 0.0021169633, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9567,7 +9567,7 @@ Rigidbody:
   m_GameObject: {fileID: 1053100620}
   serializedVersion: 2
   m_Mass: 5
-  m_Drag: 0.25
+  m_Drag: 0.7
   m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -10620,7 +10620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250630147}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -143.31621, y: 65.30421, z: 162.384}
+  m_LocalPosition: {x: -143.31621, y: 71.81, z: 134.3}
   m_LocalScale: {x: 0.23009, y: 22.873287, z: 240.54901}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11405,7 +11405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471044876}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -143.31621, y: 65.30421, z: 309.984}
+  m_LocalPosition: {x: -143.31621, y: 70.2, z: 350.3}
   m_LocalScale: {x: 0.23009, y: 22.873287, z: 240.54901}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11642,8 +11642,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552998395}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 139.11621, y: -47.904205, z: -242.084}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 139.11621, y: -409.97, z: -242.084}
+  m_LocalScale: {x: 1, y: 6.6834426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2117302890}
@@ -11916,7 +11916,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713087766}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -213.91621, y: 65.30421, z: 238.286}
+  m_LocalPosition: {x: -227.8, y: 71.64, z: 238.286}
   m_LocalScale: {x: 0.23009, y: 22.873287, z: 240.54901}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13288,7 +13288,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117302888}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -96.916214, y: 62.104206, z: 238.286}
+  m_LocalPosition: {x: -58.5, y: 68.28, z: 238.286}
   m_LocalScale: {x: 0.23009, y: 22.873287, z: 240.54901}
   m_ConstrainProportionsScale: 0
   m_Children: []
