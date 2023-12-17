@@ -21,7 +21,9 @@ public class AgarraSueltaLanza : MonoBehaviour
     public static bool PrimerSoltado = false;
     public static bool PrimerEnMano = false;
 
-    public float tiempo = 0f;
+    //public float tiempo = 0f;
+    private bool haTocadoElSuelo = false;
+    private float tiempoDeVuelo = 0f;
 
     public Canvas canvasTiempo;
     public GameObject TextObjetTime;
@@ -36,7 +38,9 @@ public class AgarraSueltaLanza : MonoBehaviour
 
     void Update()
     {
-
+        if (haTocadoElSuelo) {
+            tiempoDeVuelo += Time.deltaTime;
+        }
         if (activo == true)
         {
             if (Input.GetKeyDown(KeyCode.E))
@@ -65,7 +69,6 @@ public class AgarraSueltaLanza : MonoBehaviour
                 enMano = false;
                 lanzado = true;
                 PrimerLanzado = true;
-                MostrarTiempo();
 
                 if (this.tag == "Cubo")
                 {
@@ -90,8 +93,12 @@ public class AgarraSueltaLanza : MonoBehaviour
 
     public void MostrarTiempo(){
         canvasTiempo.gameObject.SetActive(true);
-        float tiempoPasado = tiempo = Time.time;
-        texto.text = tiempoPasado.ToString();
+        //float tiempoPasado = tiempo = Time.time;
+        texto.text = "Recuerda que en cada planeta los objetos caen en tiempos diferentes debido a su gravedad Este lanzamiento duro " + tiempoDeVuelo.ToString() +" segundos";
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        haTocadoElSuelo = true;
+
     }
 
     public void Desactivar()
@@ -109,7 +116,12 @@ public class AgarraSueltaLanza : MonoBehaviour
             soltado = false;
         }
 
-        print(Time.time - tiempo);
+        if (other.tag == "Piso")
+        {
+                MostrarTiempo();
+
+        }
+        //print(Time.time - tiempo);
 
     }
 
