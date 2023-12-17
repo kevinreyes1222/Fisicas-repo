@@ -44,8 +44,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.40802935, y: 0.3754555, z: 1}
+  m_Center: {x: -0.01995548, y: 0.070897736, z: 0}
 --- !u!114 &3357801705322138902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,7 +64,8 @@ MonoBehaviour:
   lanzado: 0
   soltado: 0
   enMano: 0
-  tiempo: 0
+  canvasTiempo: {fileID: 0}
+  TextObjetTime: {fileID: 0}
 --- !u!1 &3357801705981726058
 GameObject:
   m_ObjectHideFlags: 0
@@ -78,7 +79,6 @@ GameObject:
   - component: {fileID: 3357801705981726053}
   - component: {fileID: 3357801705981726052}
   - component: {fileID: 3357801705981726059}
-  - component: {fileID: 3357801705981726048}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Cubo
@@ -95,7 +95,7 @@ Transform:
   m_GameObject: {fileID: 3357801705981726058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -25.08, y: 10.8, z: -32.8}
-  m_LocalScale: {x: 0.23675409, y: 0.23675409, z: 0.5736078}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3357801705322138907}
@@ -181,22 +181,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3357801705981726048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3357801705981726058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ad695f5c9fa0e547ab1d4dda71df3ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cubo: {fileID: 3357801705981726058}
-  mano: {fileID: 0}
-  fuerza: 0
-  lanzado: 0
-  soltado: 0
-  enMano: 0
-  tiempo: 0

@@ -70,9 +70,9 @@ public class AgarraSueltaLanza : MonoBehaviour
                 lanzado = true;
                 PrimerLanzado = true;
 
-                if (this.tag == "Cubo")
+                if (cubo.tag == "Cubo")
                 {
-                    cubo.transform.localScale = new Vector3(2f, 2f, 2f);
+                    cubo.transform.localScale = escala*2;
                 }
 
             }
