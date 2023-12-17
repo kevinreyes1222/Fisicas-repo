@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6771295, g: 0.77146876, b: 0.87563455, a: 1}
+  m_IndirectSpecularColor: {r: 0.67698324, g: 0.77132404, b: 0.8755069, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -444,7 +444,12 @@ MonoBehaviour:
   cubo: {fileID: 1901980577}
   mano: {fileID: 956870958}
   fuerza: 10
+  lanzado: 0
+  soltado: 0
+  enMano: 0
   tiempo: 0
+  canvasTiempo: {fileID: 0}
+  TextObjetTime: {fileID: 0}
 --- !u!135 &386686246
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1432,7 +1437,12 @@ MonoBehaviour:
   cubo: {fileID: 697430288}
   mano: {fileID: 956870958}
   fuerza: 10
+  lanzado: 0
+  soltado: 0
+  enMano: 0
   tiempo: 0
+  canvasTiempo: {fileID: 0}
+  TextObjetTime: {fileID: 0}
 --- !u!135 &1047734547
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1967,6 +1977,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec8fbdc27fefba14ba2231718acb9f5e, type: 3}
+--- !u!1 &1579484602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ec8fbdc27fefba14ba2231718acb9f5e, type: 3}
+  m_PrefabInstance: {fileID: 1579484601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1579484603
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579484602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.86, y: 50, z: 4.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1652298955
 GameObject:
   m_ObjectHideFlags: 0
