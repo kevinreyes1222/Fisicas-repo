@@ -10,11 +10,15 @@ public class AgarraSueltaLanza : MonoBehaviour
     public GameObject cubo;
     public Transform mano;
     public float fuerza;
-    public  static bool lanzado = false;
-    public static bool soltado = false;
+    public  bool lanzado = false;
+    public bool soltado = false;
     private bool activo;
-    public static bool enMano;
+    public bool enMano;
     private Vector3 escala;
+
+    public static bool PrimerLanzado = false;
+    public static bool PrimerSoltado = false;
+    public static bool PrimerEnMano = false;
 
     public float tiempo = 0f;
 
@@ -37,6 +41,7 @@ public class AgarraSueltaLanza : MonoBehaviour
                 cubo.transform.rotation = mano.rotation;
                 cubo.GetComponent<Rigidbody>().isKinematic = true;
                 enMano = true;
+                PrimerEnMano = true;
             }
         }
 
@@ -53,9 +58,14 @@ public class AgarraSueltaLanza : MonoBehaviour
                 cubo.GetComponent<Rigidbody>().AddForce(transform.forward * fuerza, ForceMode.Impulse);
                 enMano = false;
                 lanzado = true;
+                PrimerLanzado = true;
                 print(tiempo = Time.time);
-                
-                
+
+                if (this.tag == "Cubo")
+                {
+                    cubo.transform.localScale = new Vector3(2f, 2f, 2f);
+                }
+
             }
         }
 
@@ -68,6 +78,7 @@ public class AgarraSueltaLanza : MonoBehaviour
             cubo.GetComponent<Rigidbody>().isKinematic = false;
             cubo.transform.localScale = escala;
             soltado = true;
+            PrimerSoltado = true;
         }
     }
 
@@ -95,10 +106,7 @@ public class AgarraSueltaLanza : MonoBehaviour
             activo = false;
         }
 
-        if (this.tag == "Cubo")
-        {
-            cubo.transform.localScale = new Vector3(2f, 2f, 2f);
-        }
+        
     }    
     
 }

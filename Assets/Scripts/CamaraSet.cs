@@ -18,10 +18,15 @@ public class CamaraSet : MonoBehaviour
     private float camaraX;
     private float camaraY;
 
+    
+
     void Start()
     {
         //impide que el cursor se vea y se salga de la ventana de juego 
-        //OcultarCursor();
+
+            OcultarCursor();
+        
+      
     }
     void Update()
     {
@@ -61,13 +66,13 @@ public class CamaraSet : MonoBehaviour
 
     }
 
-    void OcultarCursor()
+    public void OcultarCursor()
     {
         Cursor.lockState = CursorLockMode.Locked; 
         Cursor.visible = false; 
     }
 
-    void MostrarCursor()
+    public void MostrarCursor()
     {
         Cursor.lockState = CursorLockMode.None; 
         Cursor.visible = true; 

@@ -41,23 +41,23 @@ public class MostrarMensaje : MonoBehaviour
                 }
                 break;
                 case 1:
-                if (AgarraSueltaLanza.enMano)
+                if (AgarraSueltaLanza.PrimerEnMano)
                 {
                     texto.text = textos[2];
                     secuencia++;
-                    print(AgarraSueltaLanza.enMano);
+                    print(AgarraSueltaLanza.PrimerEnMano);
                 }
                 break;
                 case 2:
-                if (AgarraSueltaLanza.lanzado)
+                if (AgarraSueltaLanza.PrimerLanzado)
                 {
                     texto.text = textos[3];
                     secuencia++;
-
+                    AgarraSueltaLanza.PrimerEnMano = false;
                 }
                 break;
                 case 3:
-                if (AgarraSueltaLanza.enMano)
+                if (AgarraSueltaLanza.PrimerEnMano)
                 {
                     texto.text = textos[4];
                     secuencia++;
@@ -65,7 +65,7 @@ public class MostrarMensaje : MonoBehaviour
                 
                 break;
                 case 4:
-                if (AgarraSueltaLanza.soltado)
+                if (AgarraSueltaLanza.PrimerSoltado)
                 {
                     texto.text = textos[5];
                    completado = true;
