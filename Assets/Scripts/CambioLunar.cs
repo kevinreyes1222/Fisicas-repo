@@ -26,6 +26,7 @@ public class CambioLunar : MonoBehaviour
     {
         canvaSelector.gameObject.SetActive(true);
         camara.GetComponent<CamaraSet>().enabled = false;
+        camara.MostrarCursor();
 
     }
 
